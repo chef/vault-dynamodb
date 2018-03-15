@@ -1,5 +1,5 @@
 pkg_name=vault-dynamodb
-pkg_origin=jtimberman
+pkg_origin=chefops
 pkg_version="0.1.0"
 pkg_description="Configures Hashicorp Vault with DynamoDB storage"
 pkg_maintainer="Joshua Timberman <joshua@chef.io>"
