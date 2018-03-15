@@ -1,0 +1,20 @@
+# switch this to false you want to start in DEVMODE
+# https://www.vaultproject.io/intro/getting-started/dev-server.html
+[dev]
+mode = false
+
+[backend]
+storage = "dynamodb"
+endpoint = ""
+ha_enabled = "false"
+max_parallel = "128"
+region = "us-west-2"
+read_capacity = 5
+table = "vault-dynamodb-backend"
+write_capacity = 5
+
+[listener]
+type = "tcp"
+location = "127.0.0.1"
+port = "8200"
+tls_disable = "1"
