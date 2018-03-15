@@ -12,6 +12,10 @@ region = "us-west-2"
 read_capacity = 5
 table = "vault-dynamodb-backend"
 write_capacity = 5
+# aws access
+access_key = ""
+secret_key = ""
+session_token = ""
 
 [listener]
 type = "tcp"
