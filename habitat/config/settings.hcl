@@ -6,13 +6,13 @@ backend "{{cfg.backend.storage}}" {
   read_capacity = {{cfg.backend.read_capacity}}
   table = "{{cfg.backend.table}}"
   write_capacity = {{cfg.backend.write_capacity}}
-  {{#if cfg.access_key~}}
+  {{#if cfg.backend.access_key~}}
   access_key = "{{cfg.backend.access_key}}"
   {{/if ~}}
-  {{#if cfg.secret_key~}}
+  {{#if cfg.backend.secret_key~}}
   secret_key = "{{cfg.backend.secret_key}}"
   {{/if ~}}
-  {{#if cfg.session_token~}}
+  {{#if cfg.backend.session_token~}}
   session_token = "{{cfg.backend.session_token}}"
   {{/if ~}}
 }
